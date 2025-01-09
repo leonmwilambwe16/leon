@@ -624,7 +624,7 @@ html{
   }
 }
 
-@media (max-width:350px){
+@media (max-width:344px){
   body{
     background-image: linear-gradient(to right top, #020311, #03030f, #03020c, #03020a, #030207); 
   } 
@@ -661,6 +661,7 @@ html{
   align-items: center;
   justify-content: center;
   margin-left: 150px;
+  margin-top: 300px;
   }
   .about-box{
     padding: 20px 100px;
