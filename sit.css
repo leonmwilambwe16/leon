@@ -480,7 +480,7 @@ html{
 
 /*------------ Responsive --------*/
 
-@media (max-width:600px) {
+@media (max-width:650px) {
   .nav-content ul{
     position: absolute;
     top: 0px;
@@ -505,7 +505,8 @@ html{
   }
   .humberger{
     display: block;
-    margin-bottom: 20px;
+    color: white;
+   
     
   }
   .nav-content h2{
@@ -649,7 +650,7 @@ html{
   }
 }
 
-@media (max-width:650px){
+@media (max-width:350px){
   body{
     background-image: linear-gradient(to right top, #020311, #03030f, #03020c, #03020a, #030207); 
   } 
