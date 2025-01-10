@@ -10,7 +10,6 @@ body{
   background-image: linear-gradient(to right top, #020311, #03030f, #03020c, #03020a, #030207); 
   margin: 0;
   width: 100%;
- 
 }
 
 html{
@@ -120,7 +119,7 @@ html{
 
 .btn a{
   text-decoration: none;
-  color: black;
+  color: #706e6e;
 }
 .btn-cv{
   background:white;
@@ -128,6 +127,7 @@ html{
   border-radius: 20px;
   padding: 10px 40px;
   outline: hidden;
+  color:#706e6e ;
 
 }
 .btn-cv:hover{
@@ -187,7 +187,7 @@ html{
   transform: translate(-50%,-50%);
   font-weight: 800;
    white-space: nowrap;
-   font-size: 50px;
+   font-size: 40px;
 }
 
 .about-content{
@@ -197,6 +197,9 @@ html{
   flex-direction: row;
   gap: 10%;
   padding: 0 0 0 2%;
+  width: 70%;
+  margin-left: 85px;
+ 
 }
 
 .about-box{
@@ -231,6 +234,10 @@ html{
   background: #020311;
   color: white;
   border: none;
+  box-shadow: 10px 10px 11px -1px rgba(176,163,163,0.75);
+-webkit-box-shadow: 10px 10px 11px -1px rgba(176,163,163,0.75);
+-moz-box-shadow: 10px 10px 11px -1px rgba(176,163,163,0.75);
+color: white;
 }
 .about-box .about-btn:hover{
   background: orange;
@@ -440,7 +447,14 @@ html{
   border-radius: 50px;
   background: linear-gradient(270deg,#ff994f,#fa6d86);
   cursor: pointer;
+  
 }
+
+.contact-left button:hover{
+  background: orange;
+  transition: 0.5s;
+}
+
 .contact-left button i{
   font-size: 13px;
 }
@@ -498,6 +512,8 @@ html{
     text-align: center;
     overflow: hidden;
     background: black;
+    width: 50%;
+   
   }
   .nav-bar{
     position: fixed;
@@ -514,6 +530,7 @@ html{
   .humberger{
     display: block;
     color: white;
+    
    
     
   }
@@ -527,13 +544,33 @@ html{
   .home-section{
     display: flex;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.7) url(Image/makambo.png);
     background-position: center;
     background-size: cover;
     background-blend-mode: darken;
     width: 100%;
     
   }
+  
+  .text-box{
+ 
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.7) url(Image/makambo.png);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .home-btn{
+  
+   width: 50%;
+   margin-left: 97px;
+  }
+
+
  body{
   background-image: linear-gradient(to right top, #020311, #03030f, #03020c, #03020a, #030207);
   margin: 0;
@@ -612,7 +649,13 @@ html{
   margin-right: 50px;
 }
 
+.cont1 i{
+  font-size: 15px;
+}
 
+.socialmedia a{
+  font-size: 15px;
+}
 }
 
 
