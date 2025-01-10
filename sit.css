@@ -9,6 +9,7 @@ body{
   font-style: normal;
   background-image: linear-gradient(to right top, #020311, #03030f, #03020c, #03020a, #030207); 
   margin: 0;
+  width: 100%;
  
 }
 
@@ -16,14 +17,6 @@ html{
   scroll-behavior: smooth;
 }
 
-
-
-.container{
-  position: relative;
-  width: 100%;
- 
-  
-}
 
 .nav-bar{
  width: 100%;
@@ -180,7 +173,7 @@ html{
 .about-section h1{
  color:white;
  margin-top: 50px;
- font-size: 35px ; 
+ font-size: 30px ; 
  position: relative;
  
 }
@@ -188,7 +181,7 @@ html{
   position: absolute;
   top: 50%;
   left: 50%;
-  color: #dadadf81;
+  color: #dadadf48;
   transition: all .4s ease-in-out;
   z-index: -1;
   transform: translate(-50%,-50%);
@@ -598,7 +591,8 @@ html{
   width: 70%;
  }
  .about-section h1{
-  padding-top: 50px;
+  padding-top:-5px;
+
  }
  .project i{
   font-size: 25px;
