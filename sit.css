@@ -748,3 +748,29 @@ color: white;
 
 }
 
+@media (max-width:418px){
+  
+  .about-content{
+    display: flex;
+    gap: 0px;
+  }
+  
+  .about-box{
+    margin-right: 70px;
+    margin-top: 10px;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .about-kills{
+   width: 50px;
+   margin-right: 150px;
+  }
+  
+  .contacts-section h2{
+    text-wrap: nowrap;
+  }
+
+
+
+}
