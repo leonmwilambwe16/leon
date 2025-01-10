@@ -728,6 +728,10 @@ color: white;
   align-items: center;
   flex-direction: column;
   }
+  
+  .continent{
+    margin-left: 150px;
+  }
   .home-section{
     width: 500px;
   }
