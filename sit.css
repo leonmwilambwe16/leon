@@ -7,6 +7,8 @@ body{
   font-family: "Poppins", serif;
   font-weight: 300;
   font-style: normal;
+  background-image: linear-gradient(to right top, #020311, #03030f, #03020c, #03020a, #030207); 
+  margin: 0;
  
 }
 
@@ -18,7 +20,7 @@ html{
 
 .container{
   position: relative;
- 
+  width: 100%;
  
   
 }
@@ -170,7 +172,7 @@ html{
 .about-section{
   width: 100%;
   height: 70vh;
-  position: relative;
+ 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -188,12 +190,11 @@ html{
   flex-direction: row;
   justify-content: space-between;
   flex-direction: row;
-  gap: 20%;
+  gap: 10%;
   padding: 0 0 0 2%;
 }
 
 .about-box{
-  position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -205,7 +206,6 @@ html{
   border-radius: 20px;
 }
 .about-kills{
-  position: relative;
   max-width: 600px;
   width: 100%;
   background: rgb(241, 238, 238);
@@ -490,6 +490,13 @@ html{
     overflow: hidden;
     background: black;
   }
+  .nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
   .nav-content li{
     padding: 10px;
     position: relative;
@@ -517,8 +524,13 @@ html{
     width: 100%;
     
   }
- .container{
+ body{
   background-image: linear-gradient(to right top, #020311, #03030f, #03020c, #03020a, #030207);
+  margin: 0;
+  padding-top: 60px;
+ }
+ .container{
+  width: 100%;
  }
 
   .imagebox{
@@ -556,14 +568,10 @@ html{
  .div2 #tex2{
   margin-top: 30px;
  }
- .about-content{
-   gap: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- }
+ 
  .about-content .about-box{
-   width: 70%;
+   width: 500%;
+   height: 20%;
  }
  .about-content .about-kills{
   width: 70%;
@@ -574,6 +582,22 @@ html{
  .project i{
   font-size: 25px;
  }
+ .about-box{
+  width: 100px;
+  height: 400px;
+  margin-left: 30px;
+ }
+.contact-inputs{
+  width: 300px;
+}
+.about-kills{
+  margin-right: 30px;
+}
+.text-box{
+  margin-right: 50px;
+}
+
+
 }
 
 
@@ -624,7 +648,7 @@ html{
   }
 }
 
-@media (max-width:344px){
+@media (max-width:650px){
   body{
     background-image: linear-gradient(to right top, #020311, #03030f, #03020c, #03020a, #030207); 
   } 
@@ -653,24 +677,16 @@ html{
    overflow: hidden;
   
   }
-  .about-section h1{
-    margin-top: 250px;
-  }
-  .about-content{
+  .home-section{
     display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 150px;
-  margin-top: 300px;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.7) url(Image/makambo.png);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    width: 100%;
+    
   }
-  .about-box{
-    padding: 20px 100px;
-    height: 100%;
-    position: relative;
-    width: 100px;
-    height: 40px;
-  }
-  .project-section{
-   
-  }
+
 }
+
