@@ -656,6 +656,13 @@ color: white;
 .socialmedia a{
   font-size: 15px;
 }
+
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 }
 
 
@@ -706,7 +713,7 @@ color: white;
   }
 }
 
-@media (max-width:350px){
+@media (max-width:372px){
   body{
     background-image: linear-gradient(to right top, #020311, #03030f, #03020c, #03020a, #030207); 
   } 
@@ -714,11 +721,14 @@ color: white;
      width: 100%;
 
   }
+  
+
   .container{
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
+  align-items: center;
+  flex-direction: column;
   }
   .home-section{
     width: 500px;
@@ -773,6 +783,12 @@ color: white;
     text-wrap: nowrap;
   }
 
-
+  .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+  align-items: center;
+  flex-direction: column;
+  }
 
 }
