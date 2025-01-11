@@ -784,7 +784,11 @@ color: white;
 .text-box{
   margin-left: 150px;
 }
+.btn a{
+  border: 1px solid black;
 }
+}
+
 
 
 
