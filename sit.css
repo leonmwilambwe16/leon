@@ -25,6 +25,7 @@ html{
  border: 1px solid black;
  position: fixed;
  background-image: linear-gradient(to right top, #020311, #03030f, #03020c, #03020a, #030207); 
+ border: 1px solid red;
 
 }
 .nav-content{
