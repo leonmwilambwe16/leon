@@ -524,7 +524,6 @@ color: white;
   
   .continent{
     border: 1px solid red;
-    padding-left: 200px;
   }
 
   .nav-content li{
@@ -774,6 +773,19 @@ color: white;
  
 }
 
+@media (max-width:378px) {
+
+.continent{
+  border: 1px solid red;
+  margin-left: 300px;
+
+}
+
+.text-box{
+  margin-left: 300px;
+  border: red 1px solid;
+}
+}
 
 
 
