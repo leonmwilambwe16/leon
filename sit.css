@@ -520,6 +520,12 @@ color: white;
     left: 0;
     right: 0;
   }
+  
+  
+  .continent{
+    border: 1px solid red;
+    padding-left: 200px;
+  }
 
   .nav-content li{
     padding: 10px;
@@ -722,9 +728,7 @@ color: white;
 }
 
 @media (max-width:372px){
-  body{
- 
-  } 
+
   .text1 h1{
      width: 100%;
   }
