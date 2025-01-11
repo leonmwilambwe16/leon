@@ -10,10 +10,12 @@ body{
   background-image: linear-gradient(to right top, #020311, #03030f, #03020c, #03020a, #030207); 
   margin: 0;
   width: 100%;
+  height: -webkit-fill-available;
 }
 
 html{
   scroll-behavior: smooth;
+  height: -webkit-fill-available;
 }
 
 
@@ -761,6 +763,21 @@ color: white;
   }
  
 }
+
+@media (max-width:359px){
+  .continent{
+   margin-left: 200px;
+  }
+  
+}
+
+
+
+
+
+
+
+
 
 @media (max-width:418px){
   
