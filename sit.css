@@ -80,7 +80,7 @@ html{
  padding: 30px 5% 0 12%;
  gap: 20%;
   width: 100%;
-  height: 100vh;
+  height: 70vh;
 }
 
 .imagebox{
@@ -164,7 +164,7 @@ html{
 
 .about-section{
   width: 100%;
-  height: 100vh;
+  height: 70vh;
  
   display: flex;
   flex-direction: column;
@@ -309,7 +309,7 @@ color: white;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   margin-top: 150px;
   gap: 30px;
 }
@@ -511,9 +511,8 @@ color: white;
     flex-direction: column;
     text-align: center;
     overflow: hidden;
-    background: black;
     width: 50%;
-   
+    background: black;
   }
   .nav-bar{
     position: fixed;
@@ -571,7 +570,7 @@ color: white;
 
 
  body{
-  background-image: linear-gradient(to right top, #020311, #03030f, #03020c, #03020a, #030207);
+
   margin: 0;
   padding-top: 60px;
  }
@@ -724,7 +723,7 @@ color: white;
 
 @media (max-width:372px){
   body{
-    background-image: linear-gradient(to right top, #020311, #03030f, #03020c, #03020a, #030207); 
+ 
   } 
   .text1 h1{
      width: 100%;
