@@ -1,187 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/cc43f8a9b0.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="sit.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <title>Portfolio</title>
-</head>
-<body>
-  <div class="container">
-    <div class="nav-bar">
-      <div class="nav-content">
-        <a href="#Home">LEON</a>
-        <ul id="menuList">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/cc43f8a9b0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="sit.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-bar">
+        <div class="nav-content">
+          <a href="#Home">LEON</a>
+          <!-- Desktop Menu -->
+          <ul class="desktop-menu">
+            <li class="active-link"><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contacts">Contacts</a></li>
+          </ul>
+          <!-- Mobile Menu Button -->
+          <div class="hamburger">
+            <a href="#" onclick="toggleMenu()"
+              ><i class="fa-solid fa-bars"></i
+            ></a>
+          </div>
+        </div>
+        <!-- Mobile Menu -->
+        <ul id="menuList" class="mobile-menu">
           <li class="active-link"><a href="#Home">Home</a></li>
           <li><a href="#About">About</a></li>
           <li><a href="#Projects">Projects</a></li>
           <li><a href="#Contacts">Contacts</a></li>
         </ul>
-        <div class="humberger">
-          <a href="#" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></a>
+      </div>
+      <div class="continent">
+        <div class="home-section" id="Home">
+          <div class="text-box">
+            <div class="first-text">
+              <p>HELLO!</p>
+              <h1>
+                I'm a Frontend <span class="text">web developper</span
+                ><br />Based in canada (quebec city)
+              </h1>
+            </div>
+            <div class="home-btn">
+              <div class="btn">
+                <a href="">Hire Me</a>
+              </div>
+              <div class="btn-cv">
+                <a href="" download=""
+                  >My Cv<i class="fa-solid fa-download"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="imagebox"></div>
+        </div>
+        <div class="about-section" id="About">
+          <h1>About Me <span class="bg-text">My Portfolio</span></h1>
+          <div class="containair box">
+            <div class="about-content">
+              <div class="about-box">
+                <div class="text1">
+                  <h2>Frontent Developer</h2>
+                  <p>
+                    I'm a Frontend develloper and a UI/UX designer , with Good
+                    Experience , ready to do the good work.
+                  </p>
+                </div>
+                <button class="about-btn">Hire Me</button>
+              </div>
+              <div class="about-kills">
+                <div class="skills-box">
+                  <span class="tittle">HTML</span>
+                  <div class="skill-bar html">
+                    <span class="skill-per">
+                      <span class="tooltip">80%</span>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="skills-box">
+                  <span class="tittle">CSS</span>
+                  <div class="skill-bar css">
+                    <span class="skill-per">
+                      <span class="tooltip">80%</span>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="skills-box">
+                  <span class="tittle">JAVASCRIPT</span>
+                  <div class="skill-bar java">
+                    <span class="skill-per">
+                      <span class="tooltip">40%</span>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="skills-box">
+                  <span class="tittle">WORDPRESS</span>
+                  <div class="skill-bar wordpress">
+                    <span class="skill-per">
+                      <span class="tooltip">50%</span>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="skills-box">
+                  <span class="tittle">FIGMA</span>
+                  <div class="skill-bar figma">
+                    <span class="skill-per">
+                      <span class="tooltip">50%</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="projects-section" id="Projects">
+          <h2>My Projects</h2>
+
+          <div class="tabs-container">
+            <div class="tabs">
+              <button class="tab-btn active" data-tab="apps">Apps</button>
+              <button class="tab-btn" data-tab="websites">Websites</button>
+              <button class="tab-btn" data-tab="ui">UI Designs</button>
+              <button class="tab-btn" data-tab="unfinished">Unfinished</button>
+            </div>
+
+            <div class="tab-content active" id="apps">
+              <div class="project-grid">
+                <div class="project-card" onclick="window.location.href='#'">
+                  <img src="path/to/app1.jpg" alt="App Project 1" />
+                  <div class="project-info">
+                    <h3>Weather App</h3>
+                    <p>
+                      A beautiful weather application with real-time updates and
+                      forecasts.
+                    </p>
+                  </div>
+                </div>
+                <div class="project-card" onclick="window.location.href='#'">
+                  <img src="path/to/app1.jpg" alt="App Project 1" />
+                  <div class="project-info">
+                    <h3>Weather App</h3>
+                    <p>
+                      A beautiful weather application with real-time updates and
+                      forecasts.
+                    </p>
+                  </div>
+                </div>
+                <div class="project-card" onclick="window.location.href='#'">
+                  <img src="path/to/app1.jpg" alt="App Project 1" />
+                  <div class="project-info">
+                    <h3>Weather App</h3>
+                    <p>
+                      A beautiful weather application with real-time updates and
+                      forecasts.
+                    </p>
+                  </div>
+                </div>
+                <!-- Add more app projects -->
+              </div>
+            </div>
+
+            <div class="tab-content" id="websites">
+              <div class="project-grid">
+                <div class="project-card" onclick="window.location.href='#'">
+                  <img src="path/to/website1.jpg" alt="Website Project 1" />
+                  <div class="project-info">
+                    <h3>Portfolio Site</h3>
+                    <p>
+                      Personal portfolio website showcasing my work and skills.
+                    </p>
+                  </div>
+                </div>
+                <!-- Add more website projects -->
+              </div>
+            </div>
+
+            <div class="tab-content" id="ui">
+              <div class="project-grid">
+                <div class="project-card" onclick="window.location.href='#'">
+                  <img src="path/to/ui1.jpg" alt="UI Design 1" />
+                  <div class="project-info">
+                    <h3>Dashboard Design</h3>
+                    <p>Modern dashboard interface for data visualization.</p>
+                  </div>
+                </div>
+                <!-- Add more UI projects -->
+              </div>
+            </div>
+
+            <div class="tab-content" id="unfinished">
+              <div class="project-grid">
+                <div class="project-card" onclick="window.location.href='#'">
+                  <img
+                    src="path/to/unfinished1.jpg"
+                    alt="Unfinished Project 1"
+                  />
+                  <div class="project-info">
+                    <h3>E-commerce Platform</h3>
+                    <p>
+                      Work in progress: Full-featured online shopping platform.
+                    </p>
+                  </div>
+                </div>
+                <!-- Add more unfinished projects -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="contacts-section" id="contact">
+          <h2>Contact <span>Me</span></h2>
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="contact-left"
+          >
+            <div class="contact-left-tittle">
+              <h4>Get in touch</h4>
+              <hr />
+            </div>
+            <input
+              type="hidden"
+              name="access_key"
+              value="ca3c01ce-c622-4684-9236-3103b5f54a51"
+            />
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              class="contact-inputs"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              class="contact-inputs"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              class="contact-inputs"
+              required
+            ></textarea>
+            <button type="submit">
+              submit<i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+
+        <div class="socialmedia" id="Contacts">
+          <div class="cont1">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+1 (581) 849-1090">+1 (581) 849-1090</a>
+          </div>
+          <div class="cont1">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+          </div>
+          <div class="cont1">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div class="cont1">
+            <a href=""><i class="fa-brands fa-github"></i></a>
+          </div>
         </div>
       </div>
-     </div>
-     <div class="continent">
-     <div class="home-section" id="Home">
-      <div class="text-box">
-        <div class="first-text">
-          <p>HELLO!</p>
-          <h1>I'm a Frontend <span class="text">web developper</span><br>Based in canada (quebec city)</h1>
-        </div>
-        <div class="home-btn">
-          <div class="btn">
-            <a href="">Hire Me</a>
-          </div>
-             <div  class="btn-cv">
-              <a href="" download="" >My Cv<i class="fa-solid fa-download"></i></a>
-             </div>
-          
-        </div>
-      </div>
-      <div class="imagebox">
-       
-      </div>
-     </div>
-     <div class="about-section" id="About">
-      <h1>About Me <span class="bg-text">My Portfolio</span></h1>
-      <div class="containair box">
-       <div class="about-content">
-       <div class="about-box">
-        <div class="text1">
-          <h2>Frontent Developer</h2>
-          <p>I'm a Frontend develloper and a UI/UX designer , with Good Experience , ready to do the good work.</p>
-        </div>
-         <button class="about-btn">Hire Me</button>
-       </div>
-       <div class="about-kills">
-
-         <div class="skills-box">
-          <span class="tittle">HTML</span>
-          <div class="skill-bar html">
-            <span class="skill-per">
-              <span class="tooltip">80%</span>
-            </span>
-          </div>
-         </div>
-          
-         <div class="skills-box">
-          <span class="tittle">CSS</span>
-          <div class="skill-bar css">
-            <span class="skill-per">
-              <span class="tooltip">80%</span>
-            </span>
-          </div>
-         </div>
-          
-         <div class="skills-box">
-          <span class="tittle">JAVASCRIPT</span>
-          <div class="skill-bar java">
-            <span class="skill-per">
-              <span class="tooltip">40%</span>
-            </span>
-          </div>
-         </div>
-
-         <div class="skills-box">
-          <span class="tittle">WORDPRESS</span>
-          <div class="skill-bar wordpress">
-            <span class="skill-per">
-              <span class="tooltip">50%</span>
-            </span>
-          </div>
-         </div>
-           
-         <div class="skills-box">
-          <span class="tittle">FIGMA</span>
-          <div class="skill-bar figma">
-            <span class="skill-per">
-              <span class="tooltip">50%</span>
-            </span>
-          </div>
-         </div>
-
-       </div>
-     </div>
     </div>
-</div>
-<div class="project-section" id="Projects">
-   <h1>My projects<span class="bg-text">MY STATUS</span></h1>
-  <div class="btn-pro">
-    <button id="btn-diva"><i class="fa-solid fa-arrow-left-long"></i></button>
-    <button id="btn-divb"><i class="fa-solid fa-arrow-right-long"></i></button>
-  </div>
-    <div class="div1" id="diva">
-       <div class="containerbox">
-         <div class="project">
-          <i class="fa-brands fa-square-web-awesome"></i>
-          <h3>websites</h3>
-         </div>
-         <div class="project">
-          <i class="fa-brands fa-app-store"></i>
-          <h3>Applications</h3>
-         </div>
-       </div>
-    </div>
-    <div class="div2" id="divb">
-      <div class="containerbox">
-        <div class="project">
-          <i class="fa-brands fa-figma"></i>
-         <h3>Design</h3>
-        </div>
-        <div class="project">
-          <i class="fa-solid fa-diagram-project" id="tex2"></i>
-         <h3>Unfinished project</h3>
-        </div>
-      </div>
-    </div>
-</div>
 
-<div class="contacts-section" id="contact">
-  <h2>Contact <span>Me</span></h2>
-  <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-    <div class="contact-left-tittle">
-      <h4>Get in touch</h4>
-      <hr>
-    </div>
-    <input type="hidden" name="access_key" value="ca3c01ce-c622-4684-9236-3103b5f54a51">
-   <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
-   <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
-   <textarea name="message" placeholder="Your Message" class="contact-inputs"required></textarea>
-   <button type="submit">submit<i class="fa-solid fa-arrow-right"></i></button>
-  </form>
-</div>
-   
-<div class="socialmedia" id="Contacts">
-  <div class="cont1">
-    <i class="fa-solid fa-phone"></i>
-    <a href="tel:+1 (581) 849-1090">+1 (581) 849-1090</a>
-  </div>
-  <div class="cont1">
-    
-    <a href=""><i class="fa-brands fa-facebook"></i></a>
-   
-  </div>
-  <div class="cont1">
-   
-    <a href=""><i class="fa-brands fa-instagram"></i></a>
-    
-  </div>
-  <div class="cont1">
-    
-    <a href=""><i class="fa-brands fa-github"></i></a>
-     
-  </div>
-</div>
-</div>
-</div>
+    <script src="sit.js"></script>
+  </body>
+</html>
 
 
-
-  <script src="sit.js"></script>
-</body>
-</html> 

@@ -1,35 +1,59 @@
-let menuList = document.getElementById("menuList")
-menuList.style.maxHeight="0px";
-
-function toggleMenu(){
-  if(menuList.style.maxHeight=="0px"){
-    menuList.style.maxHeight="300px";
-  }else{
-    menuList.style.maxHeight="0px";
-  }
+// Toggle hamburger menu
+function toggleMenu() {
+  const menuList = document.getElementById('menuList');
+  menuList.style.display = menuList.style.display === 'flex' ? 'none' : 'flex';
 }
 
-
-let btndiva = document.getElementById("btn-diva");
-let btndivb = document.getElementById("btn-divb");
-let divaL = document.getElementById("diva");
-let divbL = document.getElementById("divb");
-
-btndiva.addEventListener('click',()=>{
-  divaL.style.display='block';
-  divbL.style.display='none';
+// Close menu when clicking outside
+document.addEventListener('click', function(e) {
+  const menuList = document.getElementById('menuList');
+  const hamburger = document.querySelector('.hamburger');
+  
+  if (!hamburger.contains(e.target) && !menuList.contains(e.target)) {
+    menuList.style.display = 'none';
+  }
 });
 
-btndivb.addEventListener('click',()=>{
-  divaL.style.display='none';
-  divbL.style.display='block';
+// Close menu when clicking a menu item
+document.querySelectorAll('#menuList a').forEach(item => {
+  item.addEventListener('click', () => {
+    const menuList = document.getElementById('menuList');
+    menuList.style.display = 'none';
+  });
 });
 
-
-let items = document.querySelectorAll('ul li');
-items.forEach((item) =>{
-  item.addEventListener("click",()=>{
-    document.querySelector("li.active-link").classList.remove("active-link");
-    item.classList.add("active-link");
-  })
+// Fix Skill Bar Animation
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".skill-bar .skill-per").forEach((bar) => {
+    const percentage = bar.querySelector(".tooltip").innerText;
+    bar.style.width = percentage;
+  });
 });
+
+// Tab functionality
+document.addEventListener('DOMContentLoaded', () => {
+  const tabs = document.querySelectorAll('.tab-btn');
+  const contents = document.querySelectorAll('.tab-content');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      // Remove active class from all tabs and contents
+      tabs.forEach(t => t.classList.remove('active'));
+      contents.forEach(c => c.classList.remove('active'));
+
+      // Add active class to clicked tab and corresponding content
+      tab.classList.add('active');
+      const contentId = tab.getAttribute('data-tab');
+      document.getElementById(contentId).classList.add('active');
+    });
+  });
+});
+
+// Handle window resize
+window.addEventListener('resize', () => {
+  const menuList = document.getElementById('menuList');
+  if (window.innerWidth > 768) {
+    menuList.style.display = 'none';
+  }
+});
+
